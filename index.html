@@ -17,7 +17,7 @@
         <div class="carousel wrap">
             <i @click="changeImgMinus" class="fa fa-chevron-left" aria-hidden="true"></i>
             <div class="img-container">
-                <img :src="'img/'+imgs[activeImg]" alt="">
+                <img :src="'img/'+imgs[activeImg]" class="opacity" :class='animation' alt="" id=img-id>
                 <div class="dots-container">
                     <div v-for="(item, index) in imgs" class="dot" :class="{'active' : activeImg == index}"></div>
                 </div>
