@@ -3,7 +3,7 @@ window.addEventListener("load", function (event) {
         {
             el: '#vueContainer',
             data: {
-                imgs: ['wallpaper1.jpg', 'wallpaper2.jpg', 'wallpaper3.jpg'],
+                imgs: ['wallpaper1.jpg', 'wallpaper2.jpg', 'wallpaper3.jpg','wallpaper4.jpg','wallpaper5.jpg','wallpaper6.jpg','wallpaper7.jpg','wallpaper8.jpg'],
                 dotsArray: [],
                 activeImg: 0
             },
