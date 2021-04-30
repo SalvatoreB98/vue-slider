@@ -3,8 +3,10 @@
     margin: 0;
     padding: 0;
 }
-i{
+.carousel i{
     cursor: pointer;
+    padding: 10px;
+    font-size: 50px;
 }
 .wrap{
     max-width: 900px;
@@ -26,4 +28,7 @@ i{
 }
 .img-container{
     position: relative;
+}
+.img-container img{
+    width: 100%;
 }
