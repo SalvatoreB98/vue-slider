@@ -12,14 +12,14 @@
     <title>Document</title>
     <main id="vueContainer">
         <div class="carousel wrap">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <i @click="changeImgMinus" class="fa fa-chevron-left" aria-hidden="true"></i>
             <div class="img-container">
                 <img :src="'img/'+imgs[activeImg]" alt="">
                 <div class="dots-container">
                     <div class="dot"></div>
                 </div>
             </div>
-            <i @click="changeImg" class="fa fa-chevron-right" aria-hidden="true"></i>
+            <i @click="changeImgPlus" class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
     </main>
 
