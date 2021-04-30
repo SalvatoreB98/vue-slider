@@ -17,7 +17,8 @@ h1{
 .carousel i{
     cursor: pointer;
     padding: 10px;
-    font-size: 50px;
+    font-size: 40px;
+    color: #626262;
 }
 .wrap{
     max-width: 800px;
@@ -57,6 +58,7 @@ h1{
     width: 10px;
     border-radius: 50%;
     display: inline-block;
+    margin: 0px 5px;
 }
 .active{
     background-color: blue;

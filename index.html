@@ -19,7 +19,7 @@
             <div class="img-container">
                 <img :src="'img/'+imgs[activeImg]" alt="">
                 <div class="dots-container">
-                    <div class="dot"></div>
+                    <div v-for="(item, index) in imgs" class="dot" :class="{'active' : activeImg == index}"></div>
                 </div>
             </div>
             <i @click="changeImgPlus" class="fa fa-chevron-right" aria-hidden="true"></i>

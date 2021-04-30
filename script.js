@@ -19,6 +19,11 @@ window.addEventListener("load", function (event) {
                         this.activeImg = this.imgs.length;
                     }
                     this.activeImg -=1
+                },
+                createDotsByImgs(){
+                    this.imgs.forEach(element => {
+                        this.dotsArray.push(element);
+                    });
                 }
             }
 
