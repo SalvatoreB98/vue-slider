@@ -80,7 +80,13 @@ h1{
 .auto-play{
     cursor: pointer;
     transform: scale(1.0,1.0);
-    transition: transform 1ms ease-in-out ;
+    opacity: 1;
+    transition: transform 0.1s linear, opacity 0.1s ease-out ;
+    filter: drop-shadow(2px 2px 5px #ffffffa2);
+}
+.auto-play:active {
+   transform: scale(2,2);
+   opacity: 0;
 }
 .carousel .img-container i{
     cursor: pointer;
@@ -91,8 +97,8 @@ h1{
 .play-container{
     color: white;
     position: absolute;
-    left: 0%;
-    bottom:0;
+    left: 10px;
+    bottom:10px;
 
 }
 .play-container div{
