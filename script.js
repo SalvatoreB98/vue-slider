@@ -8,6 +8,8 @@ window.addEventListener("load", function (event) {
                 activeImg: 0,
                 animation: '',
                 isAutoPlay: false,
+                isPlay: true , 
+                isPause: false
             },
             methods: {
                 changeImgPlus() {
@@ -50,6 +52,14 @@ window.addEventListener("load", function (event) {
                     clearInterval(this.isAutoPlay)
                     console.log("STOP", this.isAutoPlay)
                     this.isAutoPlay = false
+                },
+                showPlay(){
+                    this.isPause = false
+                    this.isPlay = true
+                },
+                showPause(){
+                    this.isPause = true
+                    this.isPlay = false
                 }
 
             }

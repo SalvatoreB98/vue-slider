@@ -25,10 +25,10 @@
                     <div v-for="(item, index) in imgs" class="dot" :class="{'active' : activeImg == index}"></div>
                 </div>
                 <div class="play-container">
-                    <div v-on:click="autoPlay" class="auto-play">
+                    <div v-on:click="autoPlay(); showPause()" v-if="isPlay" class="auto-play">
                         <i class="fa fa-play" aria-hidden="true"></i>
                     </div>
-                    <div v-on:click="stop" class="auto-play">
+                    <div v-on:click="stop(); showPlay()" v-if="isPause" class="auto-play">
                         <i class="fa fa-pause" aria-hidden="true"></i>
                     </div>
                 </div>

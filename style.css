@@ -76,6 +76,7 @@ h1{
 }
 .auto-play{
     cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
 }
 .carousel .img-container i{
     cursor: pointer;
