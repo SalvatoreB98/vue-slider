@@ -22,10 +22,15 @@ window.addEventListener("load", function (event) {
                     }, 200)
                 },
                 changeImgMinus() {
-                    if (this.activeImg == 0) {
-                        this.activeImg = this.imgs.length;
-                    }
-                    this.activeImg -= 1
+                    this.animation = 'animation';
+                    const self = this;
+                    setTimeout(function () {
+                        self.animation = '';
+                        self.activeImg -= 1;
+                        if (self.activeImg <= -1) {
+                            self.activeImg = self.imgs.length-1;
+                        }
+                    }, 200)
                 },
                 createDotsByImgs() {
                     this.imgs.forEach(element => {
@@ -33,7 +38,7 @@ window.addEventListener("load", function (event) {
                     });
                 },
                 autoPlay() {
-                    
+                    this.isAutoPlay =!this.isAutoPlay
                 }
 
             }

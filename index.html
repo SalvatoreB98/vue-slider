@@ -15,7 +15,7 @@
     </header>
 </head>
 <body>
-    <main id="vueContainer">
+    <main id="vueContainer"  v-on:keyup.right="changeImgPlus" v-on:keyup.left="changeImgMinus" tabindex=-1>
         <div class="carousel wrap">
             <i @click="changeImgMinus" class="fa fa-chevron-left" aria-hidden="true"></i>
             <div class="img-container">
@@ -26,7 +26,7 @@
             </div>
             <i @click="changeImgPlus" class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
-        <div class="text-center"><div @click="autoPlay" class="auto-play">  AUTOPLAY </div></div>
+        <div class="text-center"><button v-on:click="autoPlay" class="auto-play">  AUTOPLAY </button></div>
         
     </main>
 </body>
