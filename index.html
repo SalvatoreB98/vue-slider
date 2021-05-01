@@ -22,7 +22,7 @@
             <div class="img-container">
                 <img :src="'img/'+imgs[activeImg]" class="opacity" :class='animation' alt="" id=img-id>
                 <div class="dots-container">
-                    <a v-for="(item, index) in imgs" @click="setActiveImg(index)" class="dot" :class="{'active' : activeImg == index}"></a>
+                    <a v-for="(item, index) in imgs" @click="setActiveImg(index)" ><div class="dot" :class="{'active' : activeImg == index}" ></div></a>
                 </div>
                 <div class="play-container">
                     <div v-on:click="autoPlay(); showPause()" v-if="isPlay" class="auto-play">
