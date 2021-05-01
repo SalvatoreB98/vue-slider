@@ -3,10 +3,7 @@ window.addEventListener("load", function (event) {
         {
             el: '#vueContainer',
             data: {
-                imgs: ['c1.jpg', 'c2.jpg', 'c3.jpg', 'c4.jpg'], 
-                //imgs: ['b1.jpg', 'b2.jpg', 'b3.jfif', 'b4.jpg', 'b5.jpg'],
-                //imgs: ['a1.jpg', 'a2.jpg', 'a3.jpg', 'a4.jpg', 'a5.jpg', 'a6.jpg', 'a7.jpg', 'a8.jpg'],
-                // imgs: ['wallpaper1.jpg', 'wallpaper2.jpg', 'wallpaper3.jpg', 'wallpaper4.jpg', 'wallpaper5.jpg', 'wallpaper6.jpg', 'wallpaper7.jpg', 'wallpaper8.jpg'],
+                imgs: ['b1.jpg', 'b2.jpg', 'b3.jpg', 'b4.jpg'],
                 dotsArray: [],
                 activeImg: 0,
                 animation: '',
@@ -64,6 +61,9 @@ window.addEventListener("load", function (event) {
                     this.isPause = true
                     this.isPlay = false
                 },
+                setActiveImg(index){
+                    this.activeImg = index;
+                }
             }
 
         }
