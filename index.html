@@ -13,6 +13,8 @@
     <header>
         <h1>VUE SLIDER</h1>
     </header>
+</head>
+<body>
     <main id="vueContainer">
         <div class="carousel wrap">
             <i @click="changeImgMinus" class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -24,12 +26,9 @@
             </div>
             <i @click="changeImgPlus" class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
+        <div class="text-center"><div @click="autoPlay" class="auto-play">  AUTOPLAY </div></div>
+        
     </main>
-
-</head>
-
-<body>
-
 </body>
 
 </html>
