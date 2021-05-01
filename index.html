@@ -14,8 +14,9 @@
         <h1>VUE SLIDER</h1>
     </header>
 </head>
+
 <body>
-    <main id="vueContainer"  v-on:keyup.right="changeImgPlus" v-on:keyup.left="changeImgMinus" tabindex=-1>
+    <main id="vueContainer" v-on:keyup.right="changeImgPlus" v-on:keyup.left="changeImgMinus" tabindex=-1>
         <div class="carousel wrap">
             <i @click="changeImgMinus" class="fa fa-chevron-left" aria-hidden="true"></i>
             <div class="img-container">
@@ -23,11 +24,20 @@
                 <div class="dots-container">
                     <div v-for="(item, index) in imgs" class="dot" :class="{'active' : activeImg == index}"></div>
                 </div>
+                <div class="play-container">
+                    <div v-on:click="autoPlay" class="auto-play">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </div>
+                    <div v-on:click="stop" class="auto-play">
+                        <i class="fa fa-pause" aria-hidden="true"></i>
+                    </div>
+                </div>
             </div>
             <i @click="changeImgPlus" class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
-        <div class="text-center"><button v-on:click="autoPlay" class="auto-play">  AUTOPLAY </button></div>
-        
+        <div class="text-center">
+        </div>
+
     </main>
 </body>
 

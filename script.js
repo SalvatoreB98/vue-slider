@@ -7,7 +7,7 @@ window.addEventListener("load", function (event) {
                 dotsArray: [],
                 activeImg: 0,
                 animation: '',
-                isAutoPlay: false
+                isAutoPlay: false,
             },
             methods: {
                 changeImgPlus() {
@@ -38,7 +38,18 @@ window.addEventListener("load", function (event) {
                     });
                 },
                 autoPlay() {
-                    this.isAutoPlay =!this.isAutoPlay
+                    self=this;
+                    if(this.isAutoPlay == ''){
+                        this.isAutoPlay = setInterval(function(){
+                            self.changeImgPlus();
+                        },1000)
+                    }
+                   
+                },
+                stop(){
+                    clearInterval(this.isAutoPlay)
+                    console.log("STOP", this.isAutoPlay)
+                    this.isAutoPlay = false
                 }
 
             }

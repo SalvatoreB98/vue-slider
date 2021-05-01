@@ -75,14 +75,22 @@ h1{
     text-align: center;
 }
 .auto-play{
-    border-radius: 15px;
-    color: white;
-    padding: 10px;
-    display: inline-block;
-    margin: 25px;
-    background-color: #4343db;
-    filter: drop-shadow(2px 2px 5px #0000007c);
     cursor: pointer;
+}
+.carousel .img-container i{
+    cursor: pointer;
+    padding: 10px;
+    font-size:25px;
+    color: #ffffff;
+}
+.play-container{
+    color: white;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+}
+.play-container div{
+    display: inline-block;
 }
 /* RESPONSIVENESS */
 @media screen and (max-width:900px) {
@@ -98,5 +106,9 @@ h1{
 @media screen and (max-width:500px) {
     .img-container{
         height: 200px;
+    }
+    .play-container{
+        bottom: auto;
+        top: 5%;
     }
 }
