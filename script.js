@@ -13,7 +13,6 @@ window.addEventListener("load", function (event) {
                 isAutoPlay: false,
                 isPlay: true,
                 isPause: false,
-                isAnimate: false
             },
             methods: {
                 changeImgPlus() {
@@ -65,12 +64,6 @@ window.addEventListener("load", function (event) {
                     this.isPause = true
                     this.isPlay = false
                 },
-                setAnimation(){
-                    const self=this;
-                    setTimeout(function(){
-                        self.isAnimate = true;
-                    },200)
-                }
             }
 
         }
