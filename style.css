@@ -21,7 +21,7 @@ h1{
     color: #626262;
 }
 .wrap{
-    max-width: 800px;
+    max-width: 1200px;
     width: 80%;
     margin: auto;
 }
@@ -35,7 +35,7 @@ h1{
 .dots-container{
     min-width: 10px;
     position: absolute;
-    bottom: 5%;
+    bottom: 25px;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #0000006c;
@@ -45,8 +45,8 @@ h1{
 }
 .img-container{
     position: relative;
-    width: 900px;
-    height: 500px;
+    width: 1200px;
+    height: 700px;
 }
 .img-container img{
     background-color: black;
@@ -71,12 +71,16 @@ h1{
 .animation{
     opacity: 0;
 }
+.animation2{
+    transform: scale(1.4,1.4);
+}
 .text-center{
     text-align: center;
 }
 .auto-play{
     cursor: pointer;
-    transition: opacity 0.5s ease-in-out;
+    transform: scale(1.0,1.0);
+    transition: transform 1ms ease-in-out ;
 }
 .carousel .img-container i{
     cursor: pointer;
@@ -87,8 +91,9 @@ h1{
 .play-container{
     color: white;
     position: absolute;
-    left: 5%;
-    bottom: 0;
+    left: 0%;
+    bottom:0;
+
 }
 .play-container div{
     display: inline-block;
